@@ -1,0 +1,120 @@
+/*  Typography */
+
+$fontWeights: '300', '400', '500', '700';
+
+.fontFamily\:i {
+    font-family: inherit;
+}
+.fontSize\:i {
+    font-size: inherit;
+}
+.textDirection\:none {
+    text-decoration: none;
+}
+
+.fontWeight\:b {
+    font-weight: bolder;
+}
+.fontWeight\:r {
+    font-weight: normal;
+}
+.fontWeight\:i {
+    font-style: italic;
+}
+.textTransform\:u {
+    text-transform: uppercase;
+}
+.textTransform\:c {
+    text-transform: capitalize;
+}
+.textTransform\:l {
+    text-transform: lowercase;
+}
+
+.textAlign\:l {
+    text-align: left;
+}
+.textAlign\:c {
+    text-align: center;
+}
+.textAlign\:r {
+    text-align: right;
+}
+.textAlign\:j {
+    text-align: justify;
+}
+
+.whiteSpace\:nw {
+    white-space: nowrap;
+}
+.lineHeight\:1 {
+    line-height: 1;
+}
+.lineHeight\:2 {
+    line-height: 1.2;
+}
+.lineHeight\:3 {
+    line-height: 1.3;
+}
+.lineHeight\:4 {
+    line-height: 1.4;
+}
+.lineHeight\:5 {
+    line-height: 1.5;
+}
+.lineHeight\:20{
+    line-height: 2;
+}
+.lineHeight\:150{
+    line-height:150px;
+}
+
+.letterSpacing\:\.5 {
+    letter-spacing: .5px;
+}
+.letterSpacing\:1 {
+    letter-spacing: 1px;
+}
+.letterSpacing\:2 {
+    letter-spacing: 2px;
+}
+.letterSpacing\:3 {
+    letter-spacing: 3px;
+}
+
+.letterSpacing\:none {
+    list-style: none;
+}
+
+.textDecoration\:u {
+    text-decoration: underline;
+}
+.textDecoration\:l_t {
+    text-decoration: line-through;
+}
+
+.textDecoration\:n {
+    text-decoration: none !important;
+}
+
+@each $fontWeight in $fontWeights {
+    .f_w\:#{$fontWeight} {
+        font-weight: #{$fontWeight};
+    }
+}
+
+@media (max-width: 767px) {
+    .textAlign\:l\@m {
+        text-align: left;
+    }
+    .textAlign\:c\@m {
+        text-align: center;
+    }
+    .textAlign\:r\@m {
+        text-align: right;
+    }
+    .textAlign\:j\@m {
+        text-align: justify;
+    }
+
+}

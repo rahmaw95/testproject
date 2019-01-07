@@ -1,0 +1,79 @@
+/*  Border */
+.br {
+	border-style: solid;
+	border-width: 1px;
+}
+
+.br\:top {
+	border-top-style: solid;
+	border-top-width: 1px;
+}
+
+.br\:left {
+	border-left-style: solid;
+	border-left-width: 1px;
+}
+
+.br\:right {
+	border-right-style: solid;
+	border-right-width: 1px;
+}
+
+.br\:bottom {
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+
+.brWidth\:2 {
+	border-width: 2px;
+	&.br\:top {
+		border-top-style: solid;
+		border-top-width: 2px;
+	}
+
+	&.br\:right {
+		border-right-style: solid;
+		border-right-width: 2px;
+	}
+
+	&.br\:bottom {
+		border-bottom-style: solid;
+		border-bottom-width: 2px;
+	}
+
+	&.br\:left {
+		border-left-style: solid;
+		border-left-width: 2px;
+	}
+}
+
+.br\:0 {
+	border: 0;
+}
+.brWidth\:20{
+	border: 20px solid rgb(245, 245, 245);
+}
+.brWidth\:10{
+	border: 10px solid rgb(245, 245, 245);
+}
+.brRadius\:half {
+	border-radius: 50%;
+}
+
+$radius: '4', '6', '10', '18', '20';
+
+@each $size in $radius {
+	.brRadius\:#{$size} {
+		border-radius: #{$size}px;
+	}
+}
+
+.brRadius\@m {
+	@media (max-width: 767px){
+		border-radius: 4px;
+	}
+}
+
+.brRadius\:none {
+	border-radius: 0;
+}

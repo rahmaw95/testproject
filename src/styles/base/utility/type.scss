@@ -1,0 +1,62 @@
+/*  Type Scale */
+@function get-calc-font($font-size, $line-height) {
+    @return $font-size#{'px'}/($line-height / $font-size) Lato;
+ }
+
+.fontSize\:10 {
+	font: get-calc-font(10, 15);
+}
+.fontSize\:11 {
+	font: get-calc-font(11, 16);
+}
+.fontSize\:12 {
+	font: get-calc-font(12, 18);
+}
+.fontSize\:13 {
+	font: get-calc-font(13, 20);
+}
+.fontSize\:14 {
+	font: get-calc-font(14, 21);
+}
+.fontSize\:16 {
+	font: get-calc-font(16, 24);
+}
+.fontSize\:18 {
+	font: get-calc-font(18, 27);
+}
+.fontSize\:20 {
+	font: get-calc-font(20, 30);
+}
+.fontSize\:24 {
+	font: get-calc-font(24, 29);
+}
+.fontSize\:30 {
+	font-size: 30px;
+}
+.fontSize\:42 {
+	font-size: 42px;
+}
+.fontSize\:52 {
+	font-size: 52px;
+}
+
+@media (max-width: 767px) {
+	.fontSize\:10\@m {
+		font: get-calc-font(10, 15);
+	}
+	.fontSize\:11\@m {
+		font: get-calc-font(11, 16);
+	}
+	.fontSize\:12\@m {
+		font: get-calc-font(12, 18);
+	}
+	.fontSize\:14\@m {
+		font: get-calc-font(14, 21);
+	}
+	.fontSize\:16\@m {
+		font: get-calc-font(16, 24);
+	}
+	.fontSize\:18\@m {
+		font: get-calc-font(18, 27);
+	}
+}

@@ -1,0 +1,17 @@
+@each $key, $value in $colors {
+	.fontColor\:#{$key} {
+		color: #{$value};
+	}
+	.hv_fontColor\:#{$key}:hover {
+		color: #{$value};
+	}
+	.bgColor\:#{$key} {
+		background-color: #{$value};
+	}
+	.hv_bgColor\:#{$key}:hover {
+		background-color: #{$value};
+	}
+	.brColor\:#{$key} {
+		border-color: #{$value};
+	}
+}

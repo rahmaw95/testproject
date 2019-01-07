@@ -1,0 +1,9 @@
+$fontFamilies: (
+	lato: 'Lato'
+);
+
+@each $key, $value in $fontFamilies {
+	.fontFamily\:#{$key} {
+		font-family: #{$value}, sans-serif;
+	}
+}
